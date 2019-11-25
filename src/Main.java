@@ -29,5 +29,9 @@ public class Main {
         };
         Thread thread3=new Thread(runnable);
         thread3.start();
+        thread.setName("第一个线程");
+        //设为守护线程
+        thread.setDaemon(true);
+        System.out.println("thrad名称："+thread.getName());
     }
 }
